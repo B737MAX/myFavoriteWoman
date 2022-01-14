@@ -53,8 +53,6 @@ document.onclick = function(){
     first = false;
 }
 
-playSound();
-
 function textChange() {
     if(i < array.length){
         span.classList.add('span');
