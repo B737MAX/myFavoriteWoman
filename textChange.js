@@ -45,6 +45,14 @@ const array = ["Почти месяц назад мы познакомились
 const text = document.querySelector(`.text`);
 const span = document.querySelector(`.toggle`);
 let i = 0;
+function playSound() {
+    const audio = document.querySelector(".audio");
+    if (!audio) return;
+    audio.play();
+}
+
+
+playSound();
 
 function textChange() {
     if(i < array.length){
