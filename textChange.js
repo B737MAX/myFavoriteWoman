@@ -47,14 +47,14 @@ const span = document.querySelector(`.toggle`);
 let i = 0;
 
 let first = true;
-document.onclick = function(){
-    const audio = document.querySelector(".audio");
-    if(first == true) audio.play()
-    first = false;
-}
+const audio = document.querySelector(".audio");
 
 function textChange() {
     if(i < array.length){
+        if(first == true) {
+            audio.play();
+            first = false;
+        }
         span.classList.add('span');
         setTimeout(function(){
             span.textContent = array[i];
