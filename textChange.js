@@ -62,8 +62,8 @@ function textChange() {
             },3200);
             setTimeout(function(){
                 i++;
-            }, 1000)
-        }, 4000);
+            }, 800)
+        }, 2500);
     }else if(i == array.length) {
         span.textContent = array[i - 1];
     }
@@ -71,6 +71,7 @@ function textChange() {
 };
 
 text.addEventListener('click', textChange);
+
 
 
 
