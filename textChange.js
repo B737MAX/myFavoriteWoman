@@ -59,11 +59,11 @@ function textChange() {
             span.textContent = array[i];
             setTimeout(function(){
                 span.classList.remove('span');
-            },3200);
+            },2000);
             setTimeout(function(){
                 i++;
             }, 800)
-        }, 2500);
+        }, 1500);
     }else if(i == array.length) {
         span.textContent = array[i - 1];
     }
@@ -71,6 +71,7 @@ function textChange() {
 };
 
 text.addEventListener('click', textChange);
+
 
 
 
